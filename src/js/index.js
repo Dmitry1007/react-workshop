@@ -2,7 +2,7 @@ let MenuItem = require('./menu-item.jsx')
 
 ReactDOM.render(
   <ul>
-    <MenuItem isAwesome={'Awesome!!'} />
+    <MenuItem isActive={'bold'} />
     <MenuItem />
   </ul>,
   document.getElementById('app')

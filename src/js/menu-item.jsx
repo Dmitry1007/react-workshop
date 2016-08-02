@@ -1,6 +1,6 @@
-function MenuItem(props) {
+function MenuItem({isActive = false}) {
   let style = {
-    color: props.isAwesome ? 'red' : 'green'
+    fontWeight: isActive ? 'bold' : 'normal'
   }
 
   return <div style={style}>This is awesome!</div>
