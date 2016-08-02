@@ -1,9 +1,9 @@
-let MenuItem = require('./menu-item')
+let MenuItem = require('./menu-item.jsx')
 
 ReactDOM.render(
-  React.createElement('ul', null,
-    MenuItem(),
-    MenuItem()
-  ),
+  <ul>
+    <MenuItem />
+    <MenuItem />
+  </ul>,
   document.getElementById('app')
 )
