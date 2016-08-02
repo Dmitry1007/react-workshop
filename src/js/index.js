@@ -1,5 +1,4 @@
-let MenuItem = require('./menu-item.js')
-console.log(MenuItem)
+let MenuItem = require('./menu-item')
 
 ReactDOM.render(
   React.createElement('ul', null,
