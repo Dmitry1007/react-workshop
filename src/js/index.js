@@ -1,8 +1,8 @@
-let MenuItem = require('./menu-item.jsx')
+let MenuItem = require('./menu-item')
 
 ReactDOM.render(
   <ul>
-    <MenuItem isActive={'bold'} />
+    <MenuItem isActive={true} />
     <MenuItem />
   </ul>,
   document.getElementById('app')
