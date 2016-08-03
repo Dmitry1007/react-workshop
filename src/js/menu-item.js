@@ -10,7 +10,13 @@ let MenuItem = React.createClass({
           isActive: false,
           message: 'This is awesome!',
           details: 'So awesome you will piss pants'
-      };
+      }
+  },
+
+  handleClick: function() {
+    this.setState({
+      subMenuVisible: !this.state.subMenuVisible // toggle
+    })
   },
 
   render: function() {
@@ -19,7 +25,7 @@ let MenuItem = React.createClass({
     }
 
     return (
-      <div style={style}>
+      <div style={style} onClick={this.handleClick}>
         {/* Always show the message */}
         {this.props.message}
 
