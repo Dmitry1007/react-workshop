@@ -34,10 +34,10 @@ let MenuItem = React.createClass({
 
     return (
       <div style={style} onClick={this.handleClick} onMouseEnter={this.handleHover} onMouseLeave={this.handleHover}>
-        {/* Always show the message */}
-        {this.props.message}
+        {this.props.menuName}<br/>
 
-        {/* Only show details if `this.state.subMenuVisible` is truthy */}
+        {this.props.message}<br/>
+
         {this.state.subMenuVisible ? (
           <p>
             {this.props.details}
